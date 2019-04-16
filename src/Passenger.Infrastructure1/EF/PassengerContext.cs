@@ -22,7 +22,7 @@ namespace Passenger.Infrastructure.EF
 
                 return;    
             }
-            optionsBuilder.UseInMemoryDatabase(_settings.ConnectionString); //UseSqlServer
+            optionsBuilder.UseSqlServer(_settings.ConnectionString);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
